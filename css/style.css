@@ -1,0 +1,275 @@
+/* Global */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body{
+    font-family: 'Merriweather', serif;
+    background: #f0f0ef;
+    line-height: 250%;
+    text-transform: initial;
+}
+
+a {
+    color: #BFB59E;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #c8777e;
+}
+
+h1, h2 {
+    font-family: 'Beau Rivage', cursive;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+h1 {
+    font-size: 100px;
+}
+
+h2 {
+    font-size: 50px;
+}
+
+.content-wrap {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 50px;
+    overflow: auto;
+}
+
+
+
+/* My Header and Footer */
+/* I just realized I used the same font color as the example. It was not done on purpose as I used a generator. */
+header, footer {
+    background: #2B2D42;
+    color: #BFB59E;
+}
+
+/* Header */
+header {
+    text-align: center;
+}
+.resume-img {
+    background: #ded8cb;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    margin-left: 50px;
+}
+
+header h2 {
+    text-align: center;
+    float: right;
+}
+
+header p {
+    float:inline-start;
+    text-align: center;
+}
+
+header + a {
+    border: #BFB59E solid 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    display: block;
+    margin: 0;
+}
+
+footer h2 {
+    font-size: 70px;
+    font-weight: 500;
+    float: left;
+}
+
+.contact-info a {
+    margin: 1rem 1rem;
+    display: inline;
+}
+
+.fa-solid {
+    font-size: 20px;
+}
+
+/* Education */
+.education {
+    background: #ded8cb;
+}
+
+/* Navigation */
+nav {
+    padding: 10px 10px;
+    text-align: center;
+    background: #2B2D42;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+nav a {
+    padding: 15px 15px;
+}
+
+
+/* Work Experience */
+/*.experience {
+
+}*/
+
+/* Projects */
+.projects {
+    background: #ded8cb;
+    
+}
+
+.projects a {
+    font-size: 20px;
+    font-weight: 600;
+    color: #1d1e2d;
+}
+
+.projects a:hover {
+    color: #c8777e;
+}
+
+/* Activities  */
+
+
+
+/* Media Queries */
+
+@media (max-width: 767px) {
+    .education h2, .experience h2, .projects h2, .activites h2 {
+        margin: 10px 10px;
+        margin-left: 0px;
+    }
+
+    .resume-img {
+        width: 145px;
+        height: 145px;
+    }
+
+    nav {
+        position: relative;
+    }
+
+    header p {
+        padding: 1rem 1rem;
+    }
+
+    h1, h2 {
+        padding: 1.5rem 1.5rem;
+    }
+
+    
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+        .resume-img {
+            width: 170px;
+            height: 170px;
+        }
+
+        .education h2, .experience h2, .projects h2, .activites h2 {
+            margin: 10px 10px;
+            margin-left: 0px;
+        }
+        .experience h3, p {
+                display: inline-block;
+                padding: 5px 5px;
+        }
+        
+        h1, h2 {
+            padding: 2rem 2rem;
+        }
+            
+        header h2 {
+            float: none;
+            margin: 2rem 2rem;
+        }
+
+        .column-narrow {
+            width: 35%;
+            float: left;
+            min-height: 175px;
+            /* border: 2rem solid #c8777e; */
+        }
+    
+        .column-middle {
+            width: 25%;
+            float: left;
+            margin: 20px 20px;
+            min-height: 175px;
+            /* border: 2rem solid #c8777e; */
+        }
+    
+        .column-wide {
+            width: 30%;
+            float: left;
+            margin: 20px 20px;
+            min-height: 175px;
+            /* border: 2rem solid #c8777e; */
+        }
+}
+
+@media (min-width: 1025px) {
+    .column-narrow {
+        width: 35%;
+        float: left;
+        min-height: 175px;
+        /* border: 2rem solid #c8777e; */
+    }
+
+    .column-middle {
+        width: 25%;
+        float: left;
+        margin: 20px 20px;
+        min-height: 175px;
+        /* border: 2rem solid #c8777e; */
+    }
+
+    .column-wide {
+        width: 30%;
+        float: left;
+        margin: 20px 20px;
+        min-height: 175px;
+        /* border: 2rem solid #c8777e; */
+    }
+
+    header h2 {
+        float: none;
+        margin: 2rem 2rem;
+    }
+   
+}
